@@ -1,0 +1,17 @@
+version: 0.2
+
+env:
+  variables:
+    build_version: "0.1"
+
+phases:
+  install:
+    runtime-versions:
+      java: latest
+    commands:
+      - echo "Java installed"
+      - java -version
+  build:
+    commands:
+      - echo "Triggering the build"
+      - curr_working_dir=`pwd`
